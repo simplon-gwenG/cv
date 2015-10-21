@@ -1,28 +1,24 @@
+body{background-color: snow}
+
 div{
 	border: 2px solid black;
-	border-radius: 5px;
-diplay: inline-block
+	border-radius: 15px;
+background-color: #ff00ff;
+text-align: center;
 }
 # photo{
 float: right;
 }
 
-h1{
-color: grey
-}
 h2{
-color: blue;font-size:20px;background-color:grey;text-align:center;
+color: #purple;font-size:20px;background-color:lightgrey;text-align:center;
 }
 p {
-color: grey
+color: hardgrey
 }
 img{
-height: 170px;width: 170px;float: right;margin-up: 15px;
+height: 140px;width: 140px;float: right;
 }
-
-aside{
+li{
+font-style:italic; text-decoration: underline;
 }
-
-article{
-}
-
