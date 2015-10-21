@@ -1,0 +1,28 @@
+div{
+	border: 2px solid black;
+	border-radius: 5px;
+diplay: inline-block
+}
+# photo{
+float: right;
+}
+
+h1{
+color: grey
+}
+h2{
+color: blue;font-size:20px;background-color:grey;text-align:center;
+}
+p {
+color: grey
+}
+img{
+height: 170px;width: 170px;float: right;margin-up: 15px;
+}
+
+aside{
+}
+
+article{
+}
+
