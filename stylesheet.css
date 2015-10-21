@@ -1,9 +1,24 @@
 body{background-color: snow}
 
-div{
+nav{
+background-color:#F5F5F5;border-radius: 10px;text-align:center;
+}
+
+.bouton{
+	display:inline-block;
+	width:150px;
+	line-height:50px;
+	text-align:center;
+	vertical-align:none;
+	background:greenyellow;
+	color:white;
+	text-decoration:none;
+	border-radius: 10px;
+}
+#nom{
 	border: 2px solid black;
 	border-radius: 15px;
-background-color: #ff00ff;
+background-color: #fff5ee;
 text-align: center;
 }
 # photo{
