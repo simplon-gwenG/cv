@@ -1,4 +1,9 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset ="utf-8">
+  </head>
+  <body>
 <?php
 
 echo "<strong> Voici les données saisies </strong><br/><br/>";
@@ -26,3 +31,32 @@ fputs ($reponses, "site web : ".$_POST['url']."\r\n");
 fputs ($reponses, "demande de contact : ".$_POST['requete']."\r\n");
 fclose ($reponses);
 ?>
+<br/>
+<?php
+try
+{
+	$bdd = new PDO('mysql:host=localhost;dbname=test;charset=utf8', 'root', 'ecodair');
+}
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
+?>
+
+
+<?php
+//insertion de variables grâce à une requête préparée
+$req = $bdd->prepare('INSERT INTO cv(nom, mail, telephone, web, requete) VALUES(:nom, :mail, :telephone, :web, :requete)');
+
+$req->execute(array(
+	'nom' => $nom = $_POST['nom'],
+'mail' => $email = $_POST['email'],
+	'telephone' => $tel = $_POST['tel'],
+	'web' => $url = $_POST['url'],
+	'requete' => $requete = $_POST['requete']
+	));
+
+echo 'Votre base de données a bien été mise à jour !';
+?>
+</body>
+</html>
