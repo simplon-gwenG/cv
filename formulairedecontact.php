@@ -2,6 +2,8 @@
 <html>
  <head>
 	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+	<link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+	<!-- Pour ceux qui ont une résolution inférieure à 1280px -->
   <script type="text/javascript" src="script.js"></script>
 	<title>
  Formulaire de contact Gwenaelle Guezou

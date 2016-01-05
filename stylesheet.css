@@ -10,7 +10,7 @@ background-color:#F5F5F5;border-radius: 10px;text-align:center;
 }
 .bouton{
 	display:inline-block;
-	width:150px;
+	width:20%;
 	line-height:20px;
 	text-align:center;
 	vertical-align:none;
@@ -50,7 +50,7 @@ img{
 height: 120px;width: 120px;float: right;margin-top: -15px;
 }
 li{
-font-style:italic; text-decoration: underline;font-family: Arial;;
+font-style:italic; text-decoration: underline;font-family: Arial;
 }
 form{
 	display: inline-block;float: right;
